@@ -1,0 +1,114 @@
+// .react-autosuggest__container {
+//   position: relative;
+// }
+
+// .react-autosuggest__input {
+//   width: 240px;
+//   height: 30px;
+//   padding: 10px 20px;
+//   font-family: Helvetica, sans-serif;
+//   font-weight: 300;
+//   font-size: 16px;
+//   border: 1px solid #aaa;
+//   border-radius: 4px;
+// }
+
+// .react-autosuggest__input--focused {
+//   outline: none;
+// }
+
+// .react-autosuggest__input--open {
+//   border-bottom-left-radius: 0;
+//   border-bottom-right-radius: 0;
+// }
+
+// .react-autosuggest__suggestions-container {
+//   display: none;
+// }
+
+// .react-autosuggest__suggestions-container--open {
+//   display: block;
+//   position: absolute;
+//   top: 100%;
+//   width: 100%;
+//   border: 1px solid #aaa;
+//   background-color: #fff;
+//   font-family: Helvetica, sans-serif;
+//   font-weight: 300;
+//   font-size: 16px;
+//   border-bottom-left-radius: 4px;
+//   border-bottom-right-radius: 4px;
+//   z-index: 2;
+// }
+
+// .react-autosuggest__suggestions-list {
+//   margin: 0;
+//   padding: 0;
+//   list-style-type: none;
+// }
+
+// .react-autosuggest__suggestion {
+//   display: flex;
+//   cursor: pointer;
+//   // padding: 10px 20px;
+//   padding: 5px;
+// }
+
+// .react-autosuggest__suggestion--highlighted {
+//   background-color: #ddd;
+// }
+
+.event-page {
+  min-height: 80vh;
+
+  & > .row {
+    min-height: 80vh;
+  }
+}
+
+.event-pages {
+  height: 80vh;
+
+  & > .col-md-9 {
+    overflow-y: auto;
+  }
+}
+
+$timeline-border-width: 3px;
+$timeline-circle-size: 22px;
+
+.timeline {
+  border-left: $timeline-border-width solid $primary;
+
+  .item {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 40px;
+  }
+
+  .item:before {
+    content: "";
+    position: absolute;
+    left: -$timeline-border-width/2 - $timeline-circle-size/2;
+    display: inline-block;
+    width: $timeline-circle-size;
+    height: $timeline-circle-size;
+    border-radius: 100%;
+    background-color: $primary;
+  }
+}
+
+.event-image {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .event-pages {
+    & > div {
+      height: 100%;
+    }
+  }
+}

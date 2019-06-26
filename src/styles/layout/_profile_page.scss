@@ -1,0 +1,213 @@
+// PROFILE PAGE
+
+.profile {
+}
+.profile-card {
+  color: #747474;
+  text-align: center;
+  border-bottom: 10px solid $primary;
+  margin-top: 4rem;
+
+  .fa-check-circle {
+    margin-left: 8px;
+    stroke-width: 0px;
+    color: #2acb31;
+  }
+
+  .card-title {
+    color: #212529;
+  }
+
+  .badge {
+    font-size: 90%;
+    padding: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h6 {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .card-img-top {
+    background: grey;
+    text-align: center;
+    margin: 1rem auto;
+    position: relative;
+    margin-top: -4rem;
+  }
+  img,
+  .card-img-top {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+
+  .fa-user {
+    width: 5rem;
+    height: 8rem;
+    margin-right: 0;
+    stroke: #5f5f5f;
+    stroke-width: 2rem;
+    color: #fff;
+  }
+  label {
+    color: $text-muted;
+    position: absolute;
+    bottom: 0;
+    right: -35px;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    margin: 0;
+    padding: 6px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 100%;
+    box-shadow: 0 1px 5px #c8c8c8;
+  }
+  .btn-remove {
+    position: absolute;
+    right: -35px;
+    bottom: 45px;
+    border-radius: 100%;
+    box-shadow: 0 1px 5px #c8c8c8;
+    background: #fff;
+    color: $danger;
+  }
+}
+
+.about-card {
+  .card-body {
+    color: $gray;
+  }
+}
+
+.social-card {
+  svg {
+    stroke-width: 0rem;
+    color: #5f5f5f;
+  }
+
+  a {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    margin: 0 0.5rem;
+    // border: 1.5px solid $primary;
+    // border-radius: 100%;
+  }
+}
+
+.progress-card {
+  .progress-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .progress {
+    width: 80%;
+  }
+}
+
+.badge-card {
+  span {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    margin: 0.5rem;
+    background: #db7093;
+    border-radius: 5px;
+  }
+  svg {
+    color: #fff;
+  }
+}
+
+.details-card {
+  .card-body > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  svg {
+    stroke: #5f5f5f;
+    stroke-width: 2rem;
+    margin: 0 2px;
+    color: #fff;
+  }
+}
+
+.project-card {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background: #f8f8f8;
+}
+
+.profile-sticky-left {
+  position: sticky;
+  top: 143px;
+}
+.profile-sticky-right {
+  position: sticky;
+  top: 70px;
+}
+
+.profile-update {
+  margin: auto;
+  max-width: 700px;
+}
+.profile-tabs {
+  position: sticky;
+  top: 56px;
+  padding: 1.6rem 0;
+  // right:0;
+  z-index: 1;
+  background: $secondary;
+
+  .btn {
+    color: $primary;
+    background: #fff;
+    border-radius: 100px;
+    margin: 0 10px;
+  }
+  svg {
+    color: $info;
+    margin-right: 5px;
+    display: none;
+  }
+  .btn-outline-info {
+    svg {
+      display: inline-block;
+    }
+  }
+}
+
+.profile-about-card {
+  border-left: 5px solid $primary;
+  background: #fff;
+  box-shadow: $box-shadow;
+  padding: 1rem;
+  margin-block-end: 1.5rem;
+
+  & > h5 {
+    color: $primary;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile {
+    min-height: calc(100vh - 56px);
+    .col-lg-3 {
+      min-height: calc(100% - 20px);
+    }
+  }
+}

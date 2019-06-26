@@ -1,0 +1,31 @@
+.header {
+  font-weight: 700;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.link {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:hover {
+    color: #495057;
+    background-color: #f5f9fb;
+  }
+}
+.icon {
+  margin-right: 0.5rem;
+  width: 2rem !important;
+  text-align: left;
+}
+.arrow {
+  stroke: #5f5f5f;
+  stroke-width: 0rem;
+  color: #5f5f5f;
+}
+
+:global(.settings .active) {
+  color: #495057;
+  background-color: #f5f9fb;
+}

@@ -1,0 +1,120 @@
+// // react-transition-group animations
+// .fade-enter {
+//   opacity: 0.01;
+// }
+// .fade-enter-active {
+//   opacity: 1;
+//   transition: opacity 500ms ease-in;
+// }
+// .fade-exit {
+//   opacity: 1;
+// }
+// .fade-exit-active {
+//   opacity: 0.01;
+//   transition: opacity 500ms ease-in;
+// }
+
+// .slide-up-appear {
+//   transform: translateY(10px);
+//   opacity: 0;
+// }
+// .slide-up-appear.slide-up-appear-active {
+//   opacity: 1;
+//   transform: translateY(0);
+//   transition: all 0.3s linear;
+// }
+// .slide-up-enter {
+//   opacity: 0;
+//   transform: translateY(10px);
+// }
+// .slide-up-enter.slide-up-enter-active {
+//   opacity: 1;
+//   transform: translateY(0);
+//   transition: all 0.3s linear 0.2s;
+// }
+// .slide-up-leave {
+//   opacity: 1;
+//   transform: translateY(0);
+// }
+// .slide-up-leave.slide-up-leave-active {
+//   opacity: 0;
+//   position: absolute;
+//   width: 100%;
+//   transform: translateY(-10px);
+//   transition: all 0.2s linear;
+// }
+
+// .background-enter {
+//   transform: translate(100%);
+// }
+// .background-enter.background-enter-active {
+//   transform: translate(0%);
+//   transition: transform 1000ms ease-in-out;
+// }
+// .background-leave {
+//   transform: translate(0%);
+// }
+// .background-leave.background-leave-active {
+//   transform: translate(-100%);
+//   transition: transform 1000ms ease-in-out;
+// }
+
+//  keyframes
+.animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(5%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

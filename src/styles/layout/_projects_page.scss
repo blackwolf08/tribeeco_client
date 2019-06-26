@@ -1,0 +1,51 @@
+// PROJECTS PAGE
+.btn-project {
+  max-width: 350px;
+  border-width: 2px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.arrow-back {
+  color: #343a40;
+  stroke-width: 0;
+  vertical-align: sub !important;
+}
+
+.project-stats {
+  & > div {
+    display: flex;
+    flex-direction: row;
+    margin: 1.25rem 0;
+  }
+
+  h5 {
+    width: 40%;
+    text-align: left;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .progress {
+    width: 60%;
+    height: 25px;
+    border-radius: 100px;
+    background: #fff;
+    border: 1px solid;
+  }
+}
+
+.project_details {
+  h4 {
+    margin: 1.5rem 0 0.75rem 0;
+  }
+
+  h4:first-of-type {
+    margin-top: 0;
+  }
+
+  &__scroll {
+    max-height: 140px;
+    overflow: auto;
+  }
+}

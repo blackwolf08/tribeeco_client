@@ -1,0 +1,89 @@
+.liked.liked {
+  color: $primary;
+  background: $secondary;
+
+  svg {
+    color: $primary;
+    background: $secondary;
+  }
+}
+.interested.interested {
+  color: $primary;
+  background: #fff;
+  border: 2px solid $info;
+
+  svg {
+    color: $primary;
+    background: $secondary;
+  }
+}
+
+
+// Dashboard
+// .dashboard {
+//   // min-height: 100vh;
+// }
+.img-thumb {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: grey;
+  text-align: center;
+
+  svg {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    margin-right: 0;
+  }
+}
+.stats-post {
+  display: flex;
+  justify-content: space-between;
+  background: $secondary;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.project-collapse {
+  margin: 0.5rem 0;
+
+  .collapse__header {
+    display: flex;
+    justify-content: space-between;
+    background: $secondary;
+    padding: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+  }
+
+  .header:hover {
+    transition: $transition;
+    border-color: $warning;
+  }
+
+  .collapse__body {
+    border-top: 1.5px solid #cbc9c9;
+    background: $secondary;
+  }
+
+  .button {
+    text-transform: uppercase;
+  }
+}
+.post-image {
+  border: 1px solid #e3e3e3
+}
+@media (min-width: 992px) {
+  .dashboard-projects {
+    position: sticky;
+    top: 70px;
+  }
+  .dashboard-connections {
+    position: sticky;
+    top: 70px;
+  }
+}

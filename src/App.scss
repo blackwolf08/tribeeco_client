@@ -1,0 +1,47 @@
+main {
+  // background: $secondary;
+  margin-top: 55px;
+  min-height: calc(100vh - 55px);
+}
+
+// Variables
+@import "./styles/helpers/variables";
+
+// Vendors
+@import "./styles/vendors/bootstrap";
+@import "./styles/vendors/react-draft";
+
+// Utilites
+
+@import "./styles/helpers/utils";
+@import "./styles/helpers/animations";
+
+// Base files
+@import "./styles/base/base";
+
+// Page Layouts
+@import "./styles/layout/dashboard";
+@import "./styles/layout/onboarding";
+@import "./styles/layout/profile_page";
+@import "./styles/layout/projects_page";
+@import "./styles/layout/create_project";
+@import "./styles/layout/explore";
+@import "./styles/layout/message";
+@import "./styles/layout/landing";
+// @import "./styles/layout/auth";
+@import "./styles/layout/authnew";
+@import "./styles/layout/create_post";
+@import "./styles/layout/events";
+
+// Components
+@import "./styles/components/navbar";
+@import "./styles/components/form";
+
+// @media (max-width: 992px) {
+// }
+
+// @media (max-width: 768px) {
+// }
+
+// @media (max-width: 576px) {
+// }

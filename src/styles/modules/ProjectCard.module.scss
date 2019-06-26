@@ -1,0 +1,14 @@
+.box {
+  // max-width: 200px;
+  width: 200px;
+}
+.img {
+  background: #777777;
+  height: 120px;
+  border-radius: 0.5rem;
+}
+@media (max-width: 768px) {
+  .box {
+    margin: auto;
+  }
+}

@@ -1,0 +1,134 @@
+$item-box-shadow: 1px 1px 10px #e9e9e9;
+
+.interests,
+.subelements {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.25rem;
+  height: 100%;
+  max-height: 270px;
+  overflow: hidden;
+}
+
+.objectives {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.onboarding {
+  height: 100vh;
+  background: linear-gradient(to right, #fff 60%, $primary 60%);
+
+  .item {
+    display: flex;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem;
+    text-align: center;
+    transition-duration: 0.1s;
+    color: #5d5d5d;
+    border-radius: 100px;
+    border: 3px solid transparent;
+    box-shadow: $item-box-shadow;
+    cursor: pointer;
+
+    svg {
+      transition-duration: 0.1s;
+      transform: scale(0);
+      height: 100%;
+    }
+  }
+  .item:hover {
+    color: #fff;
+    background-color: $primary;
+    cursor: pointer;
+  }
+
+  .selected {
+    color: $primary;
+    border-color: $primary;
+
+    svg {
+      transform: scale(1);
+    }
+  }
+
+  .card {
+    min-height: 68vh;
+    margin: auto;
+    width: 90%;
+  }
+
+  .step {
+    margin: 1rem 0;
+
+    &-icon {
+      color: #000;
+      width: 2rem;
+      height: 2rem;
+      text-align: center;
+      background-color: #fff;
+      padding: 5px;
+      border-radius: 100%;
+      box-shadow: $item-box-shadow;
+      margin-left: 1rem;
+    }
+    &-text {
+      text-align: justify;
+      color: $muted;
+    }
+    h5 {
+      text-align: right;
+    }
+
+    &.selected {
+      font-size: 1rem;
+
+      .step-icon {
+        color: #fff;
+        background-color: $info;
+      }
+      .step-text {
+        color: $primary;
+      }
+      h5 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .step-md {
+    margin: 2rem auto 1rem;
+    width: 85%;
+    min-height: 90px;
+    justify-content: space-between;
+
+    h5 {
+      text-align: left;
+    }
+
+    .step-text {
+      max-width: 55%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .onboarding {
+    .card {
+      left: -15px;
+      height: 70vh;
+      min-height: unset;
+      margin: unset;
+    }
+
+    .row {
+      position: relative;
+      top: 44%;
+      transform: translateY(-50%);
+      & > div {
+        padding: 0;
+      }
+    }
+  }
+}

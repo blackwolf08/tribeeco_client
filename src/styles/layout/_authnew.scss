@@ -1,0 +1,75 @@
+.login-page {
+  .form-control {
+    border: 0;
+    background-color: #f0f4f3;
+  }
+}
+
+.box-back {
+  top: 150px;
+  width: 900px;
+  height: 300px;
+  padding: 0 50px;
+  margin: auto;
+  position: relative;
+
+  display: flex;
+  // flex-direction: row;
+  // align-items: stretch;
+
+  background-color: #e9ffea;
+  // background: linear-gradient(to right, #43c6ac, #ddffec);
+  // background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+
+  // background: linear-gradient(to right, #aaffa9, #11ffbd);
+
+  border-radius: 1rem;
+
+  .w-50 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+}
+.box-front {
+  width: 500px;
+  height: 450px;
+  top: -75px;
+  position: absolute;
+  visibility: initial;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background-color: #fff;
+  border-top: 5px solid $primary;
+}
+
+.password-show-checkbox {
+  display: none;
+}
+.password-show-icon {
+  position: absolute;
+  margin: 0;
+  padding: 1rem;
+  top: -7px;
+  right: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .box-front {
+    top: unset;
+    width: 90%;
+    height: 400px;
+    max-width: 500px;
+    position: relative;
+    margin: 2rem auto 0;
+    border: 2px solid $primary;
+  }
+}

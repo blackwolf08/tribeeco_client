@@ -1,0 +1,19 @@
+.post-form {
+  background-color: #fff;
+  box-shadow: $box-shadow;
+  transition: $transition;
+
+  // textarea {
+  //   border: 0;
+  //   box-shadow: none;
+  // }
+  .btn-share {
+    position: absolute;
+    right: 12px;
+    bottom: 0rem;
+    z-index: 1;
+  }
+}
+.img-preview {
+  width:200px;
+}

@@ -1,0 +1,35 @@
+.form {
+  color: #9f9f9f;
+}
+.svg {
+  position: absolute;
+  margin-left: 10px;
+  stroke-width: 0;
+  color: #9f9f9f;
+}
+.input {
+  padding-left: 30px;
+  background: #f1f3f5;
+  border-radius: 30px;
+  border: 0;
+  box-shadow: none;
+  width: 150px;
+}
+.element {
+    cursor: pointer;
+    border-radius: 0.5rem;
+    &:hover {
+      background-color: #f7f7f7;
+    }
+}
+
+.container {
+    
+  position: absolute;
+  top: 50px;
+  max-width: 500px;
+  min-width: 350px;
+  min-height: 100px;
+  background: #fff;
+  box-shadow: 1px 1px 5px #c6edff;
+}

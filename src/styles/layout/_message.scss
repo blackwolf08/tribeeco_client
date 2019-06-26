@@ -1,0 +1,22 @@
+.messages {
+  .row {
+    height: 80vh;
+    max-height: 80vh;
+  }
+  .connection {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+
+    &:hover,
+    &.active {
+      background-color: lighten($info, 60);
+    }
+
+    &.active {
+      border-right: 3px solid $primary;
+    }
+  }
+  .chatbox {
+    overflow-y: auto;
+  }
+}

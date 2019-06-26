@@ -1,0 +1,63 @@
+// Navbar
+.main-nav {
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0 1px 8px #d3d3d3;
+
+  .nav-link {
+    font-weight: 600;
+    transition: $transition;
+    padding: 1rem;
+    border-bottom: 2px solid #fff;
+
+    svg {
+      margin-right: 8px;
+    }
+    &:hover svg {
+      color: inherit;
+    }
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .nav-link:not(.active):hover {
+    background-color: $secondary;
+  }
+  .dropdown-menu {
+    top: 105%;
+  }
+
+  .active {
+    color: $primary !important;
+    border-color: $primary;
+    font-weight: 700;
+    pointer-events: none;
+
+    svg {
+      stroke: $primary;
+    }
+  }
+}
+.notification-menu {
+  left: -25%;
+  min-width: 17rem;
+  transition: height 0.3s ease;
+}
+.notifications {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  padding: 0.5rem;
+}
+.notifications-page {
+  margin: 0.25rem auto;
+  background: #fff;
+  max-width: 300px;
+}
+.notifications:not(:last-of-type) {
+  border-bottom: 1px solid $secondary;
+}
+
+.navbar-out {
+  background-color: #f0f4f3;
+}

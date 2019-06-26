@@ -1,0 +1,151 @@
+// .btn-navbar {
+//   &:hover {
+//     color: #fff;
+//   }
+// }
+.landing-page {
+  .Cursor {
+    font-weight: 500 !important;
+  }
+
+  .box-sh {
+    box-shadow: 0 5px 25px lighten($info, 60), 2px 0px 15px lighten($info, 60);
+  }
+  header {
+    img {
+      display: none;
+    }
+  }
+  section img {
+    // min-width: 250px;
+    // min-width: 335px;
+    width: auto;
+    max-height: 200px;
+  }
+
+  // .title {
+  //   text-shadow: 0px 2px 0px rgba(150, 150, 150, .7);
+  // }
+  .sec-desc {
+    min-height: 350px;
+    background: $primary;
+    color: #fff;
+    transition: transform 0.2s ease-in, box-shadow 0.3s ease-out;
+
+    & > hr {
+      width: 50px;
+      height: 6px;
+      background: #fff;
+      margin-left: 0;
+    }
+
+    &:hover {
+      box-shadow: 0 10px 15px lighten($primary, 75),
+        0 4px 7px lighten($primary, 75);
+      transform: translateY(-2px);
+
+      // .sec-title {
+      //   color: $primary;
+      // }
+    }
+  }
+  .sec-title {
+  }
+
+  .card-reveal {
+    position: absolute;
+    color: $primary;
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    transition: transform 0.3s ease-out;
+  }
+
+  .hide-right {
+    transform: translateX(101%);
+  }
+  .hide-right.show {
+    transform: translateX(0);
+  }
+
+  .hide-left {
+    transform: translateX(-101%);
+  }
+  .hide-left.show {
+    transform: translateX(0);
+  }
+
+  .contact {
+    position: relative;
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin: auto;
+
+    .form-control {
+      padding: 2rem;
+      border: 0;
+      box-shadow: 1px 1px 5px 2px #f2f2f2;
+    }
+    .form-control:focus {
+      box-shadow: 1px 1px 5px 2px lighten($info, 40);
+    }
+    .btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+    }
+  }
+  footer {
+    background-color: $primary;
+    color: #fff;
+  }
+
+  .card .card-action a {
+    font-size: 15px;
+    color: #ffab40;
+    text-transform: uppercase;
+    margin-right: 20px;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+  }
+  .card .card-action a:hover {
+    color: #ffd8a6;
+    text-decoration: none;
+  }
+}
+.btn-cta {
+  display: block;
+  width: 200px;
+}
+@media (min-width: 992px) {
+  .landing-page {
+    header {
+      min-height: 90vh;
+    }
+
+    .hero {
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+      width: 70%;
+      max-width: 700px;
+    }
+  }
+}
+.Typist {
+  display: inline-block;
+  min-height: 92px;
+}
+
+.Typist > span{
+  font-size: 2.5rem
+}

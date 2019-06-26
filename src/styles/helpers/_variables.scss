@@ -1,0 +1,41 @@
+// rgb(8,61,79)
+// rgb(12,167,80)
+
+// $primary: #4393a9;
+$primary: #5986ca;
+$warning: #ffc107;
+$primary: #f76c58;
+$primary: #d35400;
+// $primary: #DB1734;
+$secondary: #f9fafc;
+$secondary: #f5f7fa;
+// $secondary: #f7f7f7;
+// $secondary:#f5f9fb;
+// $info: #7da4f3;
+
+$primary: rgb(8, 61, 79);
+$info: rgb(12, 167, 80);
+
+$primary: #002838;
+$info: #2bb656;
+$muted: #6c757d;
+
+$link: #5986ca;
+$link-color: $primary;
+$component-active-bg: $info;
+$input-btn-focus-color:       rgba($info, .25) !default;
+
+// $input-btn-focus-box-shadow:  0 0 0 .2rem $info;
+$input-focus-box-shadow: 0 0 0 .2rem $primary;
+
+
+$border-color: #7f7f7f;
+$transition: all 0.4s cubic-bezier(0, 0, 0.2, 1);
+$gray: #747474;
+$light-gray: #dedede;
+$bg-light-blue: #e1f0f5;
+
+$box-shadow-lg: 2px 2px 10px #ebedf1, -1px -1px 5px #ebedf1;
+// $box-shadow: 0px 1px 2px #ebedf1;
+$box-shadow: 0px 2px 3px 1px #ebedf1;
+$text-secondary: #717171;
